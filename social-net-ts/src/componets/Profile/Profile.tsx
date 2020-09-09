@@ -1,10 +1,12 @@
 import React from 'react';
+import  s from './Profie.module.css'
+import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
     return (
-        <div className="content">
+        <div className={s.content}>
             <div>
-                <img
+                <img className={s.img}
                     src="https://img2.akspic.ru/preview/151517-s_vysoty_ptichego_poleta-gorodskoj_pejzazh-delovoj_rajon-metropoliya-gollivud-550x310.jpg"
                     alt=""/>
             </div>
@@ -14,14 +16,7 @@ const Profile = () => {
             </div>
 
             <div>
-                My posts
-                <div>
-                    New post
-                </div>
-                <div>
-                    <div>post 1</div>
-                    <div>post 2x</div>
-                </div>
+                <MyPosts/>
             </div>
         </div>
 
