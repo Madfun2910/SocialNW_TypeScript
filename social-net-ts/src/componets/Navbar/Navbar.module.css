@@ -1,16 +1,19 @@
 .item  {
-    color: white;
+    color: green;
 }
 
-.item.active {
+.item a {
     color: black;
+    text-decoration: none;
 }
-
-
+.item a.activeLink {
+    color: green;
+}
 
 .nav  {
     grid-area: n;
     background-color: blanchedalmond;
+    padding: 20px;
 
 }
 

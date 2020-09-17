@@ -2,6 +2,7 @@ import React from 'react';
 import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 
+
 const MyPosts = () => {
     return (
         <div>
@@ -11,13 +12,11 @@ const MyPosts = () => {
                 <button> Add post</button>
             </div>
             <div>
-                New post
+                POSTS
             </div>
             <div className={s.posts}>
-                <Post />
-                <Post />
-                <Post />
-                <Post />
+                <Post message={"Hey hello"} like={15}/>
+                <Post message={"i am fine"} like={20}/>
             </div>
         </div>
 
